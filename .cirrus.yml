@@ -3,7 +3,7 @@ container:
 
 check_task:
   env:
-    CODECOV_TOKEN: 958b2c5e-7ea8-4b83-af81-c0e4b6761857
+    CODECOV_TOKEN: b168afa5-aade-4992-9063-8840f4275862
 
   node_modules_cache:
     folder: node_modules
