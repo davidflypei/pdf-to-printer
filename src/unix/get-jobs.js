@@ -22,5 +22,7 @@ const getAllJobs = () => {
 };
 
 module.exports = getNotCompletedJobs;
+
 module.exports = getCompletedJobs;
+
 module.exports = getAllJobs;
