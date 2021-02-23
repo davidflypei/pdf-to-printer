@@ -13,6 +13,9 @@ switch (os.platform()) {
       print: require("./unix/print"),
       getPrinters: require("./unix/get-printers"),
       getDefaultPrinter: require("./unix/get-default-printer"),
+      getCompletedJobs: require("./unix/get-jobs"),
+      getNotCompletedJobs: require("./unix/get-jobs"),
+      getAllJobs: require("./unix/get-jobs"),
     };
     break;
   case "win32":

@@ -18,6 +18,12 @@ describe.each([
     expect(printer.print).toBeDefined();
     expect(printer.getDefaultPrinter).toBeDefined();
     expect(printer.getPrinters).toBeDefined();
+
+    if (alias == "linux") {
+      expect(printer.getCompletedJobs).toBeDefined();
+      expect(printer.getNotCompletedJobs).toBeDefined();
+      expect(printer.getAllJobs).toBeDefined();
+    }
   });
 });
 
