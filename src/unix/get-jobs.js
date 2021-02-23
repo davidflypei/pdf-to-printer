@@ -9,11 +9,15 @@ const parseResult = (output) => {
     .map((e) => e.substr(0, e.indexOf(" ")));
 };
 
-const getCompletedJobs = () => { return execAsync("lpstat", ["-W", "completed"], parseResult); };
-
-const getNotCompletedJobs = () => { return execAsync("lpstat", ["-W", "not-completed"], parseResult); };
-
-const getAllJobs = () => { return execAsync("lpstat", ["-W", "all"], parseResult); };
+const getCompletedJobs = () => {
+  return execAsync("lpstat", ["-W", "completed"], parseResult);
+};
+const getNotCompletedJobs = () => {
+  return execAsync("lpstat", ["-W", "not-completed"], parseResult);
+};
+const getAllJobs = () => {
+  return execAsync("lpstat", ["-W", "all"], parseResult);
+};
 
 module.exports = getNotCompletedJobs;
 module.exports = getCompletedJobs;
